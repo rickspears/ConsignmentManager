@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E69ABA16-E18E-4C31-945A-4868E2EFA3E4}</ProjectGuid>
+    <ProjectGuid>{4D75023F-ED24-4A97-9817-658BBC65789A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsignmentManager.Tests</RootNamespace>
-    <AssemblyName>ConsignmentManager.Tests</AssemblyName>
+    <RootNamespace>ConsignmentManager.Web.Tests</RootNamespace>
+    <AssemblyName>ConsignmentManager.Web.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -48,13 +48,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsignmentManager\ConsignmentManager.csproj">
-      <Project>{5DCEECEB-2310-4468-9DEB-F909AAB3C65D}</Project>
-      <Name>ConsignmentManager</Name>
+    <ProjectReference Include="..\ConsignmentManager.Web\ConsignmentManager.Web.csproj">
+      <Project>{E2654A5C-AB79-4992-890C-DE9E696E9BF7}</Project>
+      <Name>ConsignmentManager.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
