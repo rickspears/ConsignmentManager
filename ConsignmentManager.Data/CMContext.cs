@@ -12,7 +12,7 @@
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<CMContext, DbInitializer>());
         }
 
-        public DbSet<JBFModel> Items { get; set; }
+        public DbSet<JBFModel> JBFModels { get; set; }
 
     }
 }

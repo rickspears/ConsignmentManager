@@ -1,6 +1,8 @@
 ﻿namespace ConsignmentManager.Data
 {
   using System;
+  using System.ComponentModel.DataAnnotations;
+  using System.ComponentModel.DataAnnotations.Schema;
 
   public class JBFModel
   {
@@ -12,6 +14,8 @@
     public bool Reduce { get; set; }
     public bool Donate { get; set; }
     public bool Sold { get; set; }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.None)]
     public int ItemNumber { get; set; }
     public DateTime? SoldDate { get; set; }
     public double? SoldPrice { get; set; }

@@ -17,7 +17,7 @@ namespace ConsignmentManager.Web.Controllers
       [Route("api/analytics")]
       public HttpResponseMessage Get()
       {
-        var items = db.Items;
+        var items = db.JBFModels;
         HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, items);
         return response;
       }

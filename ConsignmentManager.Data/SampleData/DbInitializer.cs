@@ -15,8 +15,9 @@
         protected override void Seed(CMContext context)
         {
             base.Seed(context);
-            if (context.Items.Count() == 0) { 
-                context.Items.Add(
+            if (context.JBFModels.Count() == 0)
+            {
+              context.JBFModels.Add(
                   new JBFModel { 
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -31,7 +32,7 @@
                     SoldPrice = null, 
                     Printed = true,
                     LastUpdated = Convert.ToDateTime("12/5/2014 5:51:54") });
-                context.Items.Add(
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter",
                     Category = "Puzzles",
@@ -46,7 +47,7 @@
                     SoldPrice = 4.00,
                     Printed = true,
                     LastUpdated = Convert.ToDateTime("12/5/2014 5:51:54") });
-                context.Items.Add(
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter",
                     Category = "Books",
@@ -61,7 +62,7 @@
                     SoldPrice = 1.25,
                     Printed = true,
                     LastUpdated = Convert.ToDateTime("12/5/2014 5:51:54") });
-                context.Items.Add(
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter",
                     Category = "Puzzles",
@@ -76,7 +77,7 @@
                     SoldPrice = null,
                     Printed = true,
                     LastUpdated = Convert.ToDateTime("12/4/2014 10:13:02") });
-                context.Items.Add(
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -91,7 +92,7 @@
                     SoldPrice = 1.50, 
                     Printed = true,
                     LastUpdated = Convert.ToDateTime("12/2/2014 23:10") });
-                context.Items.Add(
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -105,8 +106,8 @@
                     SoldDate = Convert.ToDateTime("12/6/2014"), 
                     SoldPrice = 3.00, 
                     Printed = true,
-                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });					
-                context.Items.Add(
+                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -120,8 +121,8 @@
                     SoldDate = null, 
                     SoldPrice = null, 
                     Printed = true,
-                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });					
-                context.Items.Add(
+                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -135,8 +136,8 @@
                     SoldDate = null, 
                     SoldPrice = null, 
                     Printed = true,
-                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });					
-                context.Items.Add(
+                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -150,8 +151,8 @@
                     SoldDate = Convert.ToDateTime("12/6/2014"),
                     SoldPrice = 3.00, 
                     Printed = true,
-                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });					
-                context.Items.Add(
+                    LastUpdated = Convert.ToDateTime("12/2/2014 11:10:43") });
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
@@ -161,12 +162,12 @@
                     Reduce = true, 
                     Donate = false, 
                     Sold = true,
-                    ItemNumber = 45785723, 
+                    ItemNumber = 45772281, 
                     SoldDate = Convert.ToDateTime("12/7/2014"), 
                     SoldPrice = 1.50, 
                     Printed = true,
                     LastUpdated = Convert.ToDateTime("12/2/2014 8:33:01") });
-                context.Items.Add(
+              context.JBFModels.Add(
                   new JBFModel {
                     Season = "Fall/Winter", 
                     Category = "Books", 
