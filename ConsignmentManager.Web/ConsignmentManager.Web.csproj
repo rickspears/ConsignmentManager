@@ -117,7 +117,6 @@
     <Content Include="Scripts\lib\ui-utils.min.js" />
     <Content Include="Views\analytics\analytics.html" />
     <Content Include="Views\analytics\charts.html" />
-    <Content Include="Views\analytics\charts2.html" />
     <Content Include="Views\analytics\table.html" />
     <Content Include="Views\welcome.html" />
     <Content Include="Web.config">
