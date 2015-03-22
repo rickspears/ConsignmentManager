@@ -18,5 +18,6 @@ namespace ConsignmentManager.DAL
     void DeleteItems(IEnumerable<JBFModel> items);
     void DeleteItem(JBFModel item);
     void DeleteItem(int id);
+    void Save();
   }
 }
