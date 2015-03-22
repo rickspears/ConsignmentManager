@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignmentManager.Web.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignmentManager.Data", "ConsignmentManager.Data\ConsignmentManager.Data.csproj", "{654116BE-C496-4B13-879A-EB7730271E92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignmentManager.DAL", "ConsignmentManager.DAL\ConsignmentManager.DAL.csproj", "{667B011E-3C76-4CD4-8AF2-EE3C588DE9DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{654116BE-C496-4B13-879A-EB7730271E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{654116BE-C496-4B13-879A-EB7730271E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{654116BE-C496-4B13-879A-EB7730271E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667B011E-3C76-4CD4-8AF2-EE3C588DE9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667B011E-3C76-4CD4-8AF2-EE3C588DE9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667B011E-3C76-4CD4-8AF2-EE3C588DE9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667B011E-3C76-4CD4-8AF2-EE3C588DE9DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

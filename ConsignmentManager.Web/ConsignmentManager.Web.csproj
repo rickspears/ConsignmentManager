@@ -92,6 +92,8 @@
     <Content Include="Scripts\app\analytics\dailyTableController.js" />
     <Content Include="Scripts\app\analytics\dailyTotalsController.js" />
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\directives\onReadFile.js" />
+    <Content Include="Scripts\app\directives\readFileController.js" />
     <Content Include="Scripts\app\services\analyticsResource.js" />
     <Content Include="Scripts\app\services\jbf\getFileContents.js" />
     <Content Include="Scripts\app\services\jbf\parseHtmlTable.js" />
@@ -118,6 +120,7 @@
     <Content Include="Views\analytics\analytics.html" />
     <Content Include="Views\analytics\charts.html" />
     <Content Include="Views\analytics\table.html" />
+    <Content Include="Views\file.html" />
     <Content Include="Views\welcome.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -153,6 +156,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConsignmentManager.DAL\ConsignmentManager.DAL.csproj">
+      <Project>{667b011e-3c76-4cd4-8af2-ee3c588de9db}</Project>
+      <Name>ConsignmentManager.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ConsignmentManager.Data\ConsignmentManager.Data.csproj">
       <Project>{654116be-c496-4b13-879a-eb7730271e92}</Project>
       <Name>ConsignmentManager.Data</Name>
