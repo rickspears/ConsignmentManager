@@ -22,12 +22,12 @@ namespace ConsignmentManager.DAL
     #endregion
 
     #region Methods
-    public IEnumerable<Data.JBFModel> GetItems()
+    public IEnumerable<JBFModel> GetItems()
     {
       return context.JBFModels.ToList();
     }
 
-    public Data.JBFModel GetItem(int id)
+    public JBFModel GetItem(int id)
     {
       return context.JBFModels.Find(id);
     }
@@ -37,7 +37,7 @@ namespace ConsignmentManager.DAL
       context.JBFModels.AddRange(items);
     }
 
-    public void AddItem(Data.JBFModel item)
+    public void AddItem(JBFModel item)
     {
       context.JBFModels.Add(item);
     }
