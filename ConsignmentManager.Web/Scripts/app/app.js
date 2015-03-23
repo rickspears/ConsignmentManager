@@ -61,5 +61,10 @@
              }
            }
          })
+       .state("readFile", {
+         url: "/readFile",
+         templateUrl: "Views/file.html",
+         controller: "ReadFileController"
+       })
      }]);
 }());
