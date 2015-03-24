@@ -36,7 +36,7 @@ namespace ConsignmentManager.Web.Controllers
       }
 
       [Route("api/analytics/add")]
-      public HttpResponseMessage Post([FromBody] IEnumerable<JBFModel> items)
+      public HttpResponseMessage PostAdd([FromBody] IEnumerable<JBFModel> items)
       {
         repository.AddItems(items);
         repository.Save();
@@ -44,7 +44,7 @@ namespace ConsignmentManager.Web.Controllers
       }
 
       [Route("api/analytics/update")]
-      public HttpResponseMessage Post([FromBody] IEnumerable<JBFModel> items)
+      public HttpResponseMessage PostUpdate([FromBody] IEnumerable<JBFModel> items)
       {
         repository.UpdateItems(items);
         repository.Save();
