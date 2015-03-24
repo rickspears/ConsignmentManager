@@ -5,14 +5,17 @@
     .controller("ReadFileController",
                     ["$scope",
                       "$http",
+                      "jbfService",
                       ReadFileController]);
 
-  function ReadFileController($scope, $http) {
+  function ReadFileController($scope, $http, jbfService) {
     $scope.showContent = function ($fileContent) {
-      $scope.content = $fileContent;
+      var data = jbfService.convertHtmlTableToJson($fileContent);
+      $scope.content = data;
     };
 
-    var data = parseHtmlTable($scope.content);
+    var data = jbfService.convertHtmlTableToJson($scope.content);
+    if (!data) { return; }
 
     $http.post(
       "api/analytics/add",

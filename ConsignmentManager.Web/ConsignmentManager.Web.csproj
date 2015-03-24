@@ -95,8 +95,7 @@
     <Content Include="Scripts\app\directives\onReadFile.js" />
     <Content Include="Scripts\app\directives\readFileController.js" />
     <Content Include="Scripts\app\services\analyticsResource.js" />
-    <Content Include="Scripts\app\services\jbf\getFileContents.js" />
-    <Content Include="Scripts\app\services\jbf\parseHtmlTable.js" />
+    <Content Include="Scripts\app\services\jbf\jbfService.js" />
     <Content Include="Scripts\app\services\resource.js" />
     <Content Include="Scripts\lib\angular-charts.js" />
     <Content Include="Scripts\lib\angular-charts.min.js" />
