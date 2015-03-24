@@ -34,7 +34,8 @@ namespace ConsignmentManager.DAL
 
     public void AddItems(IEnumerable<JBFModel> items)
     {
-      context.JBFModels.AddRange(items);
+      if (items != null)
+        context.JBFModels.AddRange(items);
     }
 
     public void AddItem(JBFModel item)
