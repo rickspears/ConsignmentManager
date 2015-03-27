@@ -13,7 +13,7 @@
     var chartDataAmount = [];
     for (var i = 0; i < analytics.length; i++) {
       chartDataAmount.push({
-        x: analytics[i].description,
+        x: analytics[i].itemDescription,
         y: [analytics[i].price]
       });
     }

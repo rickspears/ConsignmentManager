@@ -16,7 +16,7 @@ namespace ConsignmentManager.Web.Controllers
       private IRepository repository;
       #endregion
 
-      #region Controllers
+      #region Constructors
       public JBFController() : this(new Repository(new CMContext())) { }
 
       public JBFController(IRepository repository)

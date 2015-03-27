@@ -4,12 +4,13 @@
   using System.ComponentModel.DataAnnotations;
   using System.ComponentModel.DataAnnotations.Schema;
 
+
   public class JBFModel
   {
     public string Season { get; set; }
     public string Category { get; set; }
     public string Size { get; set; }
-    public string Description { get; set; }
+    public string ItemDescription { get; set; }
     public double Price { get; set; }
     public bool Reduce { get; set; }
     public bool Donate { get; set; }
