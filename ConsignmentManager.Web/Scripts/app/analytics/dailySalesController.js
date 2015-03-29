@@ -10,34 +10,39 @@
 
   function DailySalesController($scope, analytics, cmService) {
     $scope.title = "Analytics";
-    $scope.chartType = 'pie';
+    $scope.chartType = 'bar';
     var chartData = [];
-    var dailySum = [];
+    var dailySoldPrice = [];
+    var dailyPrice = [];
+    var dailyAdjustedPrice = [];
 
     for (var i = 0; i < analytics.length; i++) {
       if (analytics[i].sold) {
         var date = cmService.getYearMonthDay(analytics[i].soldDate);
 
-        if (date in dailySum) {
-          dailySum[date] += analytics[i].price;
+        if (date in dailySoldPrice) {
+          dailyPrice[date] += analytics[i].price;
+          dailySoldPrice[date] += analytics[i].soldPrice;
+          dailyAdjustedPrice[date] += analytics[i].soldPrice * 0.7;
         }
         else {
-          dailySum[date] = analytics[i].price;
+          dailyPrice[date] = analytics[i].price;
+          dailySoldPrice[date] = analytics[i].soldPrice;
+          dailyAdjustedPrice[date] = analytics[i].soldPrice * 0.7;
         }
       }
     }
 
-    var keys = Object.keys(dailySum).sort();
+    var keys = Object.keys(dailySoldPrice).sort();
 
     keys.forEach(function (key) {
       chartData.push({
         x: key,
-        y: [dailySum[key]]
       });
     });
 
     $scope.data = {
-      series: ["Sum"],
+      series: ["List Price", "Sold Price", "Adjusted Price"],
       data: chartData
     };
 
