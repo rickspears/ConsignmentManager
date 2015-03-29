@@ -97,6 +97,7 @@
     <Content Include="Scripts\app\services\analyticsResource.js" />
     <Content Include="Scripts\app\services\jbf\jbfService.js" />
     <Content Include="Scripts\app\services\resource.js" />
+    <Content Include="Scripts\app\services\services.js" />
     <Content Include="Scripts\lib\angular-charts.js" />
     <Content Include="Scripts\lib\angular-charts.min.js" />
     <Content Include="Scripts\lib\angular-mocks.js" />

@@ -5,23 +5,18 @@
     .controller("DailySalesController",
                     ["$scope",
                      "analytics",
+                     "cmService",
                      DailySalesController]);
 
-  function DailySalesController($scope, analytics) {
+  function DailySalesController($scope, analytics, cmService) {
     $scope.title = "Analytics";
     $scope.chartType = 'pie';
     var chartDataAmount = [];
     var dailySum = [];
 
-    function getYearMonthDay(dateString) {
-      var date = new Date(dateString);
-      var ymd = date.toLocaleDateString();
-      return ymd;
-    }
-
     for (var i = 0; i < analytics.length; i++) {
       if (analytics[i].sold) {
-        var date = getYearMonthDay(analytics[i].soldDate);
+        var date = cmService.getYearMonthDay(analytics[i].soldDate);
 
         if (date in dailySum) {
           dailySum[date] += analytics[i].price;
@@ -32,12 +27,14 @@
       }
     }
 
-    for (var key in dailySum) {
+    var keys = Object.keys(dailySum).sort();
+
+    keys.forEach(function (key) {
       chartDataAmount.push({
         x: key,
         y: [dailySum[key]]
       });
-    }
+    });
 
     $scope.dataAmount = {
       series: ["Sum"],
