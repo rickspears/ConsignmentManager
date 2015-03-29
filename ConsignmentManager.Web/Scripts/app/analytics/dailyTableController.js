@@ -10,20 +10,20 @@
   function DailyTableController($scope, analytics) {
     $scope.title = "Analytics";
     $scope.chartType = 'bar';
-    var chartDataAmount = [];
+    var chartData = [];
     for (var i = 0; i < analytics.length; i++) {
-      chartDataAmount.push({
+      chartData.push({
         x: analytics[i].itemDescription,
         y: [analytics[i].price]
       });
     }
 
-    $scope.dataAmount = {
+    $scope.data = {
       series: ["Test"],
-      data: chartDataAmount
+      data: chartData
     };
 
-    $scope.configAmount = {
+    $scope.config = {
       title: "This will be a table eventually",
       tooltips: true,
       labels: false,

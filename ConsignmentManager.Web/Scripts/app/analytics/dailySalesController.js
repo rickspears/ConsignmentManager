@@ -11,7 +11,7 @@
   function DailySalesController($scope, analytics, cmService) {
     $scope.title = "Analytics";
     $scope.chartType = 'pie';
-    var chartDataAmount = [];
+    var chartData = [];
     var dailySum = [];
 
     for (var i = 0; i < analytics.length; i++) {
@@ -30,18 +30,18 @@
     var keys = Object.keys(dailySum).sort();
 
     keys.forEach(function (key) {
-      chartDataAmount.push({
+      chartData.push({
         x: key,
         y: [dailySum[key]]
       });
     });
 
-    $scope.dataAmount = {
+    $scope.data = {
       series: ["Sum"],
-      data: chartDataAmount
+      data: chartData
     };
 
-    $scope.configAmount = {
+    $scope.config = {
       title: "Daily Sales Profit",
       tooltips: true,
       labels: false,

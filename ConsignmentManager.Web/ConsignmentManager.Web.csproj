@@ -88,6 +88,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Scripts\app\analytics\categorySalesController.js" />
     <Content Include="Scripts\app\analytics\dailySalesController.js" />
     <Content Include="Scripts\app\analytics\dailyTableController.js" />
     <Content Include="Scripts\app\analytics\dailyTotalsController.js" />

@@ -58,6 +58,17 @@
                      function (response) { }).$promise;
                  }
                }
+             },
+             "categorySales@analytics": {
+               templateUrl: "Views/analytics/charts.html",
+               controller: "CategorySalesController",
+               resolve: {
+                 analyticsResource: "analyticsResource",
+                 analytics: function (analyticsResource) {
+                   return analyticsResource.query(
+                     function (response) { }).$promise;
+                 }
+               }
              }
            }
          })

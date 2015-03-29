@@ -2,45 +2,47 @@
   "use strict";
   angular
     .module("consignmentManager")
-    .controller("DailyTotalsController",
+    .controller("CategorySalesController",
                     ["$scope",
                      "analytics",
                      "cmService",
-                     DailyTotalsController]);
+                     CategorySalesController]);
 
-  function DailyTotalsController($scope, analytics, cmService) {
+  function CategorySalesController($scope, analytics, cmService) {
     $scope.title = "Analytics";
     $scope.chartType = 'bar';
     var chartData = [];
-    var dailyCount = [];
+    var categories = [];
+
     for (var i = 0; i < analytics.length; i++) {
       if (analytics[i].sold) {
-        var date = cmService.getYearMonthDay(analytics[i].soldDate);
+        var category = analytics[i].category.split("-")[0];
+        var soldPrice = analytics[i].soldPrice;
 
-        if (date in dailyCount) {
-          dailyCount[date]++;
+        if (category in categories) {
+          categories[category] += soldPrice;
         }
         else {
-          dailyCount[date] = 1;
+          categories[category] = soldPrice;
         }
       }
     }
-    var keys = Object.keys(dailyCount).sort();
+    var keys = Object.keys(categories).sort();
 
     keys.forEach(function (key) {
       chartData.push({
         x: key,
-        y: [dailyCount[key]]
+        y: [categories[key]]
       });
     });
 
     $scope.data = {
-      series: ["Count"],
+      series: ["Totals"],
       data: chartData
     };
 
     $scope.config = {
-      title: "Daily Sales Count",
+      title: "Sales by Category",
       tooltips: true,
       labels: false,
       mouseover: function () { },
