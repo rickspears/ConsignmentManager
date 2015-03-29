@@ -38,6 +38,7 @@
     keys.forEach(function (key) {
       chartData.push({
         x: key,
+        y: [dailyPrice[key], dailySoldPrice[key], dailyAdjustedPrice[key]]
       });
     });
 
