@@ -16,8 +16,6 @@
       var columns = doc.getElementsByTagName('th');
       var rows = doc.getElementsByTagName('tr');
 
-      //var data = { 'header': [], 'rows': [] }
-
       var header = []
       var data = []
 

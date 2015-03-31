@@ -85,6 +85,8 @@
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery-ui.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -112,8 +114,11 @@
     <Content Include="Scripts\lib\bootstrap.min.js" />
     <Content Include="Scripts\lib\d3.js" />
     <Content Include="Scripts\lib\d3.min.js" />
+    <Content Include="Scripts\lib\date.js" />
     <Content Include="Scripts\lib\jquery-2.1.3.js" />
     <Content Include="Scripts\lib\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\lib\jquery-ui.js" />
+    <Content Include="Scripts\lib\jquery-ui.min.js" />
     <Content Include="Scripts\lib\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\lib\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\lib\ui-utils.js" />
